@@ -17,3 +17,14 @@ en:
 
   titles:
     application: Koala
+    posts:
+      index: Posts
+
+  layouts:
+    application:
+      sign_in: Log in
+      sign_out: Logout
+
+  application:
+    header:
+      submit: Submit Story

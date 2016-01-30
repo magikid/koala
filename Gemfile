@@ -23,6 +23,8 @@ gem "title"
 gem "uglifier"
 gem "bitters"
 
+gem "clearance"
+
 group :development do
   gem "quiet_assets"
   gem "refills"
