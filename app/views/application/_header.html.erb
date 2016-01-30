@@ -1,0 +1,25 @@
+<header class="navigation" role="banner">
+  <nav role="navigation">
+    <ul id="js-navigation-menu" class="navigation-menu show">
+      <li class="nav-link">
+        <%= link_to root_path do %>
+          <%= image_tag "K-logo.png", alt: "K", class: "logo" %>
+        <% end %>
+      </li>
+      <li class="nav-link">
+        <%= link_to "Koala", root_path %>
+      </li>
+      <li class="nav-link">
+        <%= link_to t(".submit"), new_post_path %>
+      </li>
+    </ul>
+  </nav>
+  <div class="navigation-tools">
+    <% if signed_in? %>
+      <%= current_user.email %>
+      <%= link_to t("layouts.application.sign_out"), sign_out_path, method: :delete %>
+    <% else %>
+      <%= link_to t("layouts.application.sign_in"), sign_in_path %>
+    <% end %>
+  </div>
+</header>
