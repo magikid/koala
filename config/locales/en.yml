@@ -28,3 +28,7 @@ en:
   application:
     header:
       submit: Submit Story
+
+  posts:
+    create:
+      logged_in_error: You must be logged in to submit a Post
